@@ -6765,10 +6765,16 @@ function start(vgView, options) {
         if (shouldShowTooltip(item)) {
             // clear existing promise because mouse can only point at one thing at a time
             cancelPromise();
-            // make a new promise with time delay for tooltip
-            tooltipPromise = window.setTimeout(function () {
+            var delay = isNaN(options.delay) ? options_1.DELAY : options.delay;
+            if (delay) {
+                // make a new promise with time delay for tooltip
+                tooltipPromise = window.setTimeout(function () {
+                    init(event, item, options);
+                }, delay);
+            }
+            else {
                 init(event, item, options);
-            }, options.delay || options_1.DELAY);
+            }
         }
     });
     // update tooltip position on mouse move
@@ -6970,8 +6976,13 @@ exports.prepareCustomFieldsData = prepareCustomFieldsData;
  * that the field is not a direct child of item.datum
  * @return the field value on success, undefined otherwise
  */
-// TODO(zening): Mute "Cannot find field" warnings for composite vis (issue #39)
 function getValue(itemData, field, isComposition) {
+    if (!field) {
+        // `field` is not required when using `valueAccessor`, and if
+        // `valueAccessor` returns a falsy value this path will throw
+        // and break the tooltip. Exit here instead.
+        return undefined;
+    }
     var value;
     var accessors = field.split('.');
     // get the first accessor and remove it from the array
