@@ -107,8 +107,14 @@ export function prepareCustomFieldsData(itemData: ScenegraphData, options: Optio
  * that the field is not a direct child of item.datum
  * @return the field value on success, undefined otherwise
  */
-// TODO(zening): Mute "Cannot find field" warnings for composite vis (issue #39)
 export function getValue(itemData: ScenegraphData, field: string, isComposition: boolean) {
+  if (!field) {
+      // `field` is not required when using `valueAccessor`, and if
+      // `valueAccessor` returns a falsy value this path will throw
+      // and break the tooltip. Exit here instead.
+      return undefined;
+  }
+  
   let value: string | number | Date | ScenegraphData;
 
   const accessors: string[] = field.split('.');
