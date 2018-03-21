@@ -51,10 +51,15 @@ function start(vgView: VgView, options: Option) {
       // clear existing promise because mouse can only point at one thing at a time
       cancelPromise();
 
-      // make a new promise with time delay for tooltip
-      tooltipPromise = window.setTimeout(function () {
+      const delay = isNaN(options.delay) ? DELAY : options.delay;
+      if (delay) {
+        // make a new promise with time delay for tooltip
+        tooltipPromise = window.setTimeout(function () {
+          init(event, item, options);
+        }, delay);
+      } else {
         init(event, item, options);
-      }, options.delay || DELAY);
+      }
     }
   });
 
