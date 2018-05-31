@@ -586,6 +586,14 @@ camelcase@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
+canvas-prebuilt@1.6.5-prerelease.1:
+  version "1.6.5-prerelease.1"
+  resolved "https://unpm.uberinternal.com/canvas-prebuilt/-/canvas-prebuilt-1.6.5-prerelease.1.tgz#6814b20b9c80835dcc24bfd6199147288630521c"
+  dependencies:
+    node-pre-gyp "^0.6.29"
+    parse-css-font "^2.0.2"
+    units-css "^0.4.0"
+
 canvas-prebuilt@^1.6:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/canvas-prebuilt/-/canvas-prebuilt-1.6.0.tgz#f8dd9abe81fdc2103a39d8362df3219d6d83f788"
@@ -597,6 +605,12 @@ canvas@^1.6:
   resolved "https://registry.yarnpkg.com/canvas/-/canvas-1.6.9.tgz#e3f95cec7b16bf2d6f3fc725c02d940d3258f69b"
   dependencies:
     nan "^2.4.0"
+
+canvas@^1.6.11:
+  version "1.6.11"
+  resolved "https://unpm.uberinternal.com/canvas/-/canvas-1.6.11.tgz#c2d8bcf283281f19ded14fa163a111804522330d"
+  dependencies:
+    nan "^2.10.0"
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -811,7 +825,37 @@ crypto-browserify@^3.0.0:
     randombytes "^2.0.0"
     randomfill "^1.0.3"
 
-d3-array@1, d3-array@1.2.1, d3-array@^1.1.1, d3-array@^1.2.0:
+css-font-size-keywords@^1.0.0:
+  version "1.0.0"
+  resolved "https://unpm.uberinternal.com/css-font-size-keywords/-/css-font-size-keywords-1.0.0.tgz#854875ace9aca6a8d2ee0d345a44aae9bb6db6cb"
+
+css-font-stretch-keywords@^1.0.1:
+  version "1.0.1"
+  resolved "https://unpm.uberinternal.com/css-font-stretch-keywords/-/css-font-stretch-keywords-1.0.1.tgz#50cee9b9ba031fb5c952d4723139f1e107b54b10"
+
+css-font-style-keywords@^1.0.1:
+  version "1.0.1"
+  resolved "https://unpm.uberinternal.com/css-font-style-keywords/-/css-font-style-keywords-1.0.1.tgz#5c3532813f63b4a1de954d13cea86ab4333409e4"
+
+css-font-weight-keywords@^1.0.0:
+  version "1.0.0"
+  resolved "https://unpm.uberinternal.com/css-font-weight-keywords/-/css-font-weight-keywords-1.0.0.tgz#9bc04671ac85bc724b574ef5d3ac96b0d604fd97"
+
+css-global-keywords@^1.0.1:
+  version "1.0.1"
+  resolved "https://unpm.uberinternal.com/css-global-keywords/-/css-global-keywords-1.0.1.tgz#72a9aea72796d019b1d2a3252de4e5aaa37e4a69"
+
+css-list-helpers@^1.0.1:
+  version "1.0.1"
+  resolved "https://unpm.uberinternal.com/css-list-helpers/-/css-list-helpers-1.0.1.tgz#fff57192202db83240c41686f919e449a7024f7d"
+  dependencies:
+    tcomb "^2.5.0"
+
+css-system-font-keywords@^1.0.0:
+  version "1.0.0"
+  resolved "https://unpm.uberinternal.com/css-system-font-keywords/-/css-system-font-keywords-1.0.0.tgz#85c6f086aba4eb32c571a3086affc434b84823ed"
+
+d3-array@1, d3-array@1.2.1, d3-array@^1.1.1, d3-array@^1.2.0, d3-array@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/d3-array/-/d3-array-1.2.1.tgz#d1ca33de2f6ac31efadb8e050a021d7e2396d5dc"
 
@@ -836,7 +880,7 @@ d3-chord@1.0.4:
     d3-array "1"
     d3-path "1"
 
-d3-collection@1, d3-collection@1.0.4:
+d3-collection@1, d3-collection@1.0.4, d3-collection@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/d3-collection/-/d3-collection-1.0.4.tgz#342dfd12837c90974f33f1cc0a785aea570dcdc2"
 
@@ -844,9 +888,19 @@ d3-color@1, d3-color@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/d3-color/-/d3-color-1.0.3.tgz#bc7643fca8e53a8347e2fbdaffa236796b58509b"
 
+d3-color@^1.2.0:
+  version "1.2.0"
+  resolved "https://unpm.uberinternal.com/d3-color/-/d3-color-1.2.0.tgz#d1ea19db5859c86854586276ec892cf93148459a"
+
 d3-contour@1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/d3-contour/-/d3-contour-1.1.2.tgz#21f5456fcf57645922d69a27a58e782c91f842b3"
+  dependencies:
+    d3-array "^1.1.1"
+
+d3-contour@^1.2.0:
+  version "1.2.0"
+  resolved "https://unpm.uberinternal.com/d3-contour/-/d3-contour-1.2.0.tgz#de3ea7991bbb652155ee2a803aeafd084be03b63"
   dependencies:
     d3-array "^1.1.1"
 
@@ -861,7 +915,7 @@ d3-drag@1, d3-drag@1.2.1:
     d3-dispatch "1"
     d3-selection "1"
 
-d3-dsv@1, d3-dsv@1.0.8:
+d3-dsv@1, d3-dsv@1.0.8, d3-dsv@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/d3-dsv/-/d3-dsv-1.0.8.tgz#907e240d57b386618dc56468bacfe76bf19764ae"
   dependencies:
@@ -873,7 +927,7 @@ d3-ease@1, d3-ease@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/d3-ease/-/d3-ease-1.0.3.tgz#68bfbc349338a380c44d8acc4fbc3304aa2d8c0e"
 
-d3-force@1, d3-force@1.1.0:
+d3-force@1, d3-force@1.1.0, d3-force@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/d3-force/-/d3-force-1.1.0.tgz#cebf3c694f1078fcc3d4daf8e567b2fbd70d4ea3"
   dependencies:
@@ -886,9 +940,19 @@ d3-format@1, d3-format@1.2.2, d3-format@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/d3-format/-/d3-format-1.2.2.tgz#1a39c479c8a57fe5051b2e67a3bee27061a74e7a"
 
+d3-format@^1.3.0:
+  version "1.3.0"
+  resolved "https://unpm.uberinternal.com/d3-format/-/d3-format-1.3.0.tgz#a3ac44269a2011cdb87c7b5693040c18cddfff11"
+
 d3-geo@1, d3-geo@1.9.1:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/d3-geo/-/d3-geo-1.9.1.tgz#157e3b0f917379d0f73bebfff3be537f49fa7356"
+  dependencies:
+    d3-array "1"
+
+d3-geo@^1.10.0:
+  version "1.10.0"
+  resolved "https://unpm.uberinternal.com/d3-geo/-/d3-geo-1.10.0.tgz#2972d18014f1e38fc1f8bb6d545377bdfb00c9ab"
   dependencies:
     d3-array "1"
 
@@ -896,13 +960,23 @@ d3-hierarchy@1, d3-hierarchy@1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/d3-hierarchy/-/d3-hierarchy-1.1.5.tgz#a1c845c42f84a206bcf1c01c01098ea4ddaa7a26"
 
+d3-hierarchy@^1.1.6:
+  version "1.1.6"
+  resolved "https://unpm.uberinternal.com/d3-hierarchy/-/d3-hierarchy-1.1.6.tgz#842c1372090f870b7ea013ebae5c0c8d9f56229c"
+
 d3-interpolate@1, d3-interpolate@1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/d3-interpolate/-/d3-interpolate-1.1.6.tgz#2cf395ae2381804df08aa1bf766b7f97b5f68fb6"
   dependencies:
     d3-color "1"
 
-d3-path@1, d3-path@1.0.5:
+d3-interpolate@^1.1.6, d3-interpolate@^1.2.0:
+  version "1.2.0"
+  resolved "https://unpm.uberinternal.com/d3-interpolate/-/d3-interpolate-1.2.0.tgz#40d81bd8e959ff021c5ea7545bc79b8d22331c41"
+  dependencies:
+    d3-color "1"
+
+d3-path@1, d3-path@1.0.5, d3-path@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/d3-path/-/d3-path-1.0.5.tgz#241eb1849bd9e9e8021c0d0a799f8a0e8e441764"
 
@@ -938,6 +1012,13 @@ d3-scale-chromatic@^1.1:
     d3-color "1"
     d3-interpolate "1"
 
+d3-scale-chromatic@^1.3.0:
+  version "1.3.0"
+  resolved "https://unpm.uberinternal.com/d3-scale-chromatic/-/d3-scale-chromatic-1.3.0.tgz#7ee38ffcaa7ad55cfed83a6a668aac5570c653c4"
+  dependencies:
+    d3-color "1"
+    d3-interpolate "1"
+
 d3-scale@1, d3-scale@1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/d3-scale/-/d3-scale-1.0.7.tgz#fa90324b3ea8a776422bd0472afab0b252a0945d"
@@ -950,11 +1031,22 @@ d3-scale@1, d3-scale@1.0.7:
     d3-time "1"
     d3-time-format "2"
 
+d3-scale@^2.0.0:
+  version "2.0.0"
+  resolved "https://unpm.uberinternal.com/d3-scale/-/d3-scale-2.0.0.tgz#fd8ac78381bc2ed741d8c71770437a5e0549a5a5"
+  dependencies:
+    d3-array "^1.2.0"
+    d3-collection "1"
+    d3-format "1"
+    d3-interpolate "1"
+    d3-time "1"
+    d3-time-format "2"
+
 d3-selection@1, d3-selection@1.3.0, d3-selection@^1.1.0, d3-selection@^1.2.0, d3-selection@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/d3-selection/-/d3-selection-1.3.0.tgz#d53772382d3dc4f7507bfb28bcd2d6aed2a0ad6d"
 
-d3-shape@1, d3-shape@1.2.0:
+d3-shape@1, d3-shape@1.2.0, d3-shape@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/d3-shape/-/d3-shape-1.2.0.tgz#45d01538f064bafd05ea3d6d2cb748fd8c41f777"
   dependencies:
@@ -966,11 +1058,11 @@ d3-time-format@2, d3-time-format@2.1.1, d3-time-format@^2.1.1:
   dependencies:
     d3-time "1"
 
-d3-time@1, d3-time@1.0.8:
+d3-time@1, d3-time@1.0.8, d3-time@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/d3-time/-/d3-time-1.0.8.tgz#dbd2d6007bf416fe67a76d17947b784bffea1e84"
 
-d3-timer@1, d3-timer@1.0.7:
+d3-timer@1, d3-timer@1.0.7, d3-timer@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/d3-timer/-/d3-timer-1.0.7.tgz#df9650ca587f6c96607ff4e60cc38229e8dd8531"
 
@@ -985,7 +1077,7 @@ d3-transition@1, d3-transition@1.1.1:
     d3-selection "^1.1.0"
     d3-timer "1"
 
-d3-voronoi@1, d3-voronoi@1.1.2:
+d3-voronoi@1, d3-voronoi@1.1.2, d3-voronoi@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/d3-voronoi/-/d3-voronoi-1.1.2.tgz#1687667e8f13a2d158c80c1480c5a29cb0d8973c"
 
@@ -1685,6 +1777,10 @@ isexe@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
 
+isnumeric@^0.2.0:
+  version "0.2.0"
+  resolved "https://unpm.uberinternal.com/isnumeric/-/isnumeric-0.2.0.tgz#a2347ba360de19e33d0ffd590fddf7755cbf2e64"
+
 isobject@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-2.1.0.tgz#f065561096a3f1da2ef46272f815c840d87e0c89"
@@ -1936,9 +2032,17 @@ ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
+nan@^2.10.0:
+  version "2.10.0"
+  resolved "https://unpm.uberinternal.com/nan/-/nan-2.10.0.tgz#96d0cd610ebd58d4b4de9cc0c6828cda99c7548f"
+
 nan@^2.3.0, nan@^2.4.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.8.0.tgz#ed715f3fe9de02b57a5e6252d90a96675e1f085a"
+
+node-fetch@^2.1.2:
+  version "2.1.2"
+  resolved "https://unpm.uberinternal.com/node-fetch/-/node-fetch-2.1.2.tgz#ab884e8e7e57e38a944753cec706f788d1768bb5"
 
 node-pre-gyp@^0.6.29, node-pre-gyp@^0.6.39:
   version "0.6.39"
@@ -2100,6 +2204,20 @@ parse-asn1@^5.0.0:
     create-hash "^1.1.0"
     evp_bytestokey "^1.0.0"
     pbkdf2 "^3.0.3"
+
+parse-css-font@^2.0.2:
+  version "2.0.2"
+  resolved "https://unpm.uberinternal.com/parse-css-font/-/parse-css-font-2.0.2.tgz#7b60b060705a25a9b90b7f0ed493e5823248a652"
+  dependencies:
+    css-font-size-keywords "^1.0.0"
+    css-font-stretch-keywords "^1.0.1"
+    css-font-style-keywords "^1.0.1"
+    css-font-weight-keywords "^1.0.0"
+    css-global-keywords "^1.0.1"
+    css-list-helpers "^1.0.1"
+    css-system-font-keywords "^1.0.0"
+    tcomb "^2.5.0"
+    unquote "^1.1.0"
 
 parse-glob@^3.0.4:
   version "3.0.4"
@@ -2665,6 +2783,10 @@ tar@^2.2.1:
     fstream "^1.0.2"
     inherits "2"
 
+tcomb@^2.5.0:
+  version "2.7.0"
+  resolved "https://unpm.uberinternal.com/tcomb/-/tcomb-2.7.0.tgz#10d62958041669a5d53567b9a4ee8cde22b1c2b0"
+
 ternary@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ternary/-/ternary-1.0.0.tgz#45702725608c9499d46a9610e9b0e49ff26f789e"
@@ -2701,7 +2823,7 @@ to-arraybuffer@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/to-arraybuffer/-/to-arraybuffer-1.0.1.tgz#7d229b1fcc637e466ca081180836a7aabff83f43"
 
-topojson-client@3:
+topojson-client@3, topojson-client@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/topojson-client/-/topojson-client-3.0.0.tgz#1f99293a77ef42a448d032a81aa982b73f360d2f"
   dependencies:
@@ -2742,6 +2864,10 @@ tsify@^3.0.4:
 tslib@^1.0.0, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.0.tgz#e37a86fda8cbbaf23a057f473c9f4dc64e5fc2e8"
+
+tslib@^1.9.2:
+  version "1.9.2"
+  resolved "https://unpm.uberinternal.com/tslib/-/tslib-1.9.2.tgz#8be0cc9a1f6dc7727c38deb16c2ebd1a2892988e"
 
 tslint-eslint-rules@^4.1.1:
   version "4.1.1"
@@ -2819,6 +2945,17 @@ umd@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/umd/-/umd-3.0.1.tgz#8ae556e11011f63c2596708a8837259f01b3d60e"
 
+units-css@^0.4.0:
+  version "0.4.0"
+  resolved "https://unpm.uberinternal.com/units-css/-/units-css-0.4.0.tgz#d6228653a51983d7c16ff28f8b9dc3b1ffed3a07"
+  dependencies:
+    isnumeric "^0.2.0"
+    viewport-dimensions "^0.2.0"
+
+unquote@^1.1.0:
+  version "1.1.1"
+  resolved "https://unpm.uberinternal.com/unquote/-/unquote-1.1.1.tgz#8fded7324ec6e88a0ff8b905e7c098cdc086d544"
+
 url@~0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/url/-/url-0.11.0.tgz#3838e97cfc60521eb73c525a8e55bfdd9e2e28f1"
@@ -2851,6 +2988,10 @@ vega-canvas@1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/vega-canvas/-/vega-canvas-1.0.1.tgz#22cfa510af0cfbd920fc6af8b6111d3de5e63c44"
 
+vega-canvas@^1.0.1, vega-canvas@^1.1.0:
+  version "1.1.0"
+  resolved "https://unpm.uberinternal.com/vega-canvas/-/vega-canvas-1.1.0.tgz#99ce74d4510a46fc9ed1a8721014da725898ec9f"
+
 vega-crossfilter@2:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/vega-crossfilter/-/vega-crossfilter-2.0.0.tgz#29a8d789add5a2d0f25a4cdedb16713bf4f39061"
@@ -2859,12 +3000,27 @@ vega-crossfilter@2:
     vega-dataflow "3"
     vega-util "1"
 
+vega-crossfilter@^3.0.0:
+  version "3.0.0"
+  resolved "https://unpm.uberinternal.com/vega-crossfilter/-/vega-crossfilter-3.0.0.tgz#390f4c380a9c6018bf89700c38c08d16cd95607a"
+  dependencies:
+    d3-array "^1.2.1"
+    vega-dataflow "^4.0.0"
+    vega-util "^1.7.0"
+
 vega-dataflow@3:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/vega-dataflow/-/vega-dataflow-3.0.4.tgz#403a79d797a61016c66a90fb58c6a6530759384b"
   dependencies:
     vega-loader "2"
     vega-util "1"
+
+vega-dataflow@^4.0.0, vega-dataflow@^4.0.1:
+  version "4.0.1"
+  resolved "https://unpm.uberinternal.com/vega-dataflow/-/vega-dataflow-4.0.1.tgz#fc30daef4dba310f4c45b9d276a80b55565a3df8"
+  dependencies:
+    vega-loader "^3.0.0"
+    vega-util "^1.7.0"
 
 vega-datasets@vega/vega-datasets#gh-pages:
   version "1.13.0"
@@ -2891,11 +3047,22 @@ vega-encode@2:
     vega-scale "^2.1"
     vega-util "1"
 
+vega-encode@^3.0.0:
+  version "3.0.0"
+  resolved "https://unpm.uberinternal.com/vega-encode/-/vega-encode-3.0.0.tgz#a131c617584ee3c6759ac0afbbd6b64ec9b34483"
+  dependencies:
+    d3-array "^1.2.1"
+    d3-format "^1.2.2"
+    d3-interpolate "^1.1.6"
+    vega-dataflow "^4.0.0"
+    vega-scale "^2.1.1"
+    vega-util "^1.7.0"
+
 vega-event-selector@2, vega-event-selector@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/vega-event-selector/-/vega-event-selector-2.0.0.tgz#6af8dc7345217017ceed74e9155b8d33bad05d42"
 
-vega-expression@2:
+vega-expression@2, vega-expression@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/vega-expression/-/vega-expression-2.3.1.tgz#d802a329190bdeb999ce6d8083af56b51f686e83"
   dependencies:
@@ -2909,6 +3076,14 @@ vega-force@2:
     vega-dataflow "3"
     vega-util "1"
 
+vega-force@^3.0.0:
+  version "3.0.0"
+  resolved "https://unpm.uberinternal.com/vega-force/-/vega-force-3.0.0.tgz#f5d10bb0a49e41c47f2d83441e407510948eb89a"
+  dependencies:
+    d3-force "^1.1.0"
+    vega-dataflow "^4.0.0"
+    vega-util "^1.7.0"
+
 vega-geo@^2.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/vega-geo/-/vega-geo-2.1.1.tgz#eaf128927cd146e1c0843d15f25a0a08d5dbf524"
@@ -2920,6 +3095,17 @@ vega-geo@^2.1:
     vega-projection "1"
     vega-util "1"
 
+vega-geo@^3.0.0:
+  version "3.0.0"
+  resolved "https://unpm.uberinternal.com/vega-geo/-/vega-geo-3.0.0.tgz#3bec776588d0ee3e0a6a8b33d97153b3510d8f69"
+  dependencies:
+    d3-array "^1.2.1"
+    d3-contour "^1.2.0"
+    d3-geo "^1.10.0"
+    vega-dataflow "^4.0.0"
+    vega-projection "^1.1.0"
+    vega-util "^1.7.0"
+
 vega-hierarchy@^2.1:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/vega-hierarchy/-/vega-hierarchy-2.1.0.tgz#92119c43a9dc8f534c1836446661161dc9e42196"
@@ -2929,7 +3115,43 @@ vega-hierarchy@^2.1:
     vega-dataflow "3"
     vega-util "1"
 
-vega-lite@^2.0.0, vega-lite@^2.1.2:
+vega-hierarchy@^3.0.0:
+  version "3.0.0"
+  resolved "https://unpm.uberinternal.com/vega-hierarchy/-/vega-hierarchy-3.0.0.tgz#5f68dc44fbd9c385a7788d892d3d2b0b155a811e"
+  dependencies:
+    d3-collection "^1.0.4"
+    d3-hierarchy "^1.1.6"
+    vega-dataflow "^4.0.0"
+    vega-util "^1.7.0"
+
+vega-lib@4.0.0-rc.2:
+  version "4.0.0-rc.2"
+  resolved "https://unpm.uberinternal.com/vega-lib/-/vega-lib-4.0.0-rc.2.tgz#c77fba0adb55d85b44d2bd3421dc5d0ef22fdd9b"
+  dependencies:
+    vega-crossfilter "^3.0.0"
+    vega-dataflow "^4.0.1"
+    vega-encode "^3.0.0"
+    vega-event-selector "^2.0.0"
+    vega-expression "^2.3.1"
+    vega-force "^3.0.0"
+    vega-geo "^3.0.0"
+    vega-hierarchy "^3.0.0"
+    vega-loader "^3.0.0"
+    vega-parser "^3.1.0"
+    vega-projection "^1.1.0"
+    vega-runtime "^3.0.1"
+    vega-scale "^2.2.0"
+    vega-scenegraph "^3.1.0"
+    vega-statistics "^1.2.1"
+    vega-transforms "^2.0.0"
+    vega-typings "*"
+    vega-util "^1.7.0"
+    vega-view "^3.2.0"
+    vega-view-transforms "^2.0.0"
+    vega-voronoi "^3.0.0"
+    vega-wordcloud "^3.0.0"
+
+vega-lite@^2.0.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/vega-lite/-/vega-lite-2.1.2.tgz#ca94eb1d9633763ec6465e40fec7ed040779f695"
   dependencies:
@@ -2938,6 +3160,18 @@ vega-lite@^2.0.0, vega-lite@^2.1.2:
     tslib "^1.9.0"
     vega-event-selector "^2.0.0"
     vega-util "^1.6.2"
+    yargs "^11.0.0"
+
+vega-lite@^2.1.0:
+  version "2.5.0"
+  resolved "https://unpm.uberinternal.com/vega-lite/-/vega-lite-2.5.0.tgz#1a5cea00e6ef05f9b48c5d084c2f39b7ea71225d"
+  dependencies:
+    "@types/json-stable-stringify" "^1.0.32"
+    json-stable-stringify "^1.0.1"
+    tslib "^1.9.2"
+    vega-event-selector "^2.0.0"
+    vega-typings "^0.3.4"
+    vega-util "^1.7.0"
     yargs "^11.0.0"
 
 vega-loader@2:
@@ -2949,6 +3183,16 @@ vega-loader@2:
     d3-time-format "2"
     topojson-client "3"
     vega-util "1"
+
+vega-loader@^3.0.0:
+  version "3.0.0"
+  resolved "https://unpm.uberinternal.com/vega-loader/-/vega-loader-3.0.0.tgz#0df9eb2fc52073cfc372d23decfdb99e075c9e6f"
+  dependencies:
+    d3-dsv "^1.0.8"
+    d3-time-format "^2.1.1"
+    node-fetch "^2.1.2"
+    topojson-client "^3.0.0"
+    vega-util "^1.7.0"
 
 vega-parser@2, vega-parser@^2.4:
   version "2.4.0"
@@ -2966,11 +3210,34 @@ vega-parser@2, vega-parser@^2.4:
     vega-statistics "^1.2"
     vega-util "^1.6"
 
+vega-parser@3.1.0, vega-parser@^3.1.0:
+  version "3.1.0"
+  resolved "https://unpm.uberinternal.com/vega-parser/-/vega-parser-3.1.0.tgz#8d83cfc613428885cbe9e1103674aeca2d0b2945"
+  dependencies:
+    d3-array "^1.2.1"
+    d3-color "^1.2.0"
+    d3-format "^1.3.0"
+    d3-geo "^1.10.0"
+    d3-time-format "^2.1.1"
+    vega-dataflow "^4.0.1"
+    vega-event-selector "^2.0.0"
+    vega-expression "^2.3.1"
+    vega-scale "^2.1.1"
+    vega-scenegraph "^3.1.0"
+    vega-statistics "^1.2.1"
+    vega-util "^1.7.0"
+
 vega-projection@1:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/vega-projection/-/vega-projection-1.0.0.tgz#8875aefe9bc0b7b215ff2fa3358626efffa5c664"
   dependencies:
     d3-geo "1"
+
+vega-projection@^1.1.0:
+  version "1.2.0"
+  resolved "https://unpm.uberinternal.com/vega-projection/-/vega-projection-1.2.0.tgz#812c955251dab495fda83d9406ba72d9833a2014"
+  dependencies:
+    d3-geo "^1.10.0"
 
 vega-runtime@2:
   version "2.0.1"
@@ -2978,6 +3245,13 @@ vega-runtime@2:
   dependencies:
     vega-dataflow "3"
     vega-util "1"
+
+vega-runtime@^3.0.1:
+  version "3.0.1"
+  resolved "https://unpm.uberinternal.com/vega-runtime/-/vega-runtime-3.0.1.tgz#d90ee0ed1c1e992df90399ebfc363583a9cc916d"
+  dependencies:
+    vega-dataflow "^4.0.1"
+    vega-util "^1.7.0"
 
 vega-scale@2, vega-scale@^2.1:
   version "2.1.0"
@@ -2990,6 +3264,17 @@ vega-scale@2, vega-scale@^2.1:
     d3-time "1"
     vega-util "1"
 
+vega-scale@^2.1.1, vega-scale@^2.2.0:
+  version "2.2.0"
+  resolved "https://unpm.uberinternal.com/vega-scale/-/vega-scale-2.2.0.tgz#676c0aa2e744ee378bc5dc3fc1251d249f468d40"
+  dependencies:
+    d3-array "^1.2.1"
+    d3-interpolate "^1.2.0"
+    d3-scale "^2.0.0"
+    d3-scale-chromatic "^1.3.0"
+    d3-time "^1.0.8"
+    vega-util "^1.7.0"
+
 vega-scenegraph@2, vega-scenegraph@^2.2:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/vega-scenegraph/-/vega-scenegraph-2.2.0.tgz#a72e44b286a19d1f38dc8ceaf2a1a20cabc48000"
@@ -3000,11 +3285,21 @@ vega-scenegraph@2, vega-scenegraph@^2.2:
     vega-loader "2"
     vega-util "^1.1"
 
+vega-scenegraph@^3.0.0, vega-scenegraph@^3.1.0:
+  version "3.1.0"
+  resolved "https://unpm.uberinternal.com/vega-scenegraph/-/vega-scenegraph-3.1.0.tgz#f8c6d022a1584f9247a7aa98ad264b10e91e9d2f"
+  dependencies:
+    d3-path "^1.0.5"
+    d3-shape "^1.2.0"
+    vega-canvas "^1.1.0"
+    vega-loader "^3.0.0"
+    vega-util "^1.7.0"
+
 vega-schema-url-parser@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/vega-schema-url-parser/-/vega-schema-url-parser-1.0.0.tgz#fc17631e354280d663ed39e3fa8eddb62145402e"
 
-vega-statistics@^1.2:
+vega-statistics@^1.2, vega-statistics@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/vega-statistics/-/vega-statistics-1.2.1.tgz#a35b3fc3d0039f8bb0a8ba1381d42a1df79ecb34"
   dependencies:
@@ -3019,9 +3314,26 @@ vega-transforms@^1.1:
     vega-statistics "^1.2"
     vega-util "1"
 
+vega-transforms@^2.0.0:
+  version "2.0.0"
+  resolved "https://unpm.uberinternal.com/vega-transforms/-/vega-transforms-2.0.0.tgz#fe8cc7829d04dd4dd39e3c6a0a9edfdaed5a2aeb"
+  dependencies:
+    d3-array "^1.2.1"
+    vega-dataflow "^4.0.0"
+    vega-statistics "^1.2.1"
+    vega-util "^1.7.0"
+
+vega-typings@*, vega-typings@^0.3.4:
+  version "0.3.4"
+  resolved "https://unpm.uberinternal.com/vega-typings/-/vega-typings-0.3.4.tgz#ea17c3c9c0114eadf658bcf04788fd603e0e83eb"
+
 vega-util@1, vega-util@^1.1, vega-util@^1.6, vega-util@^1.6.2:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/vega-util/-/vega-util-1.6.2.tgz#9d9d7cc65dfc9cd70eeb8dba8bb5c9924be5dacc"
+
+vega-util@^1.7.0:
+  version "1.7.0"
+  resolved "https://unpm.uberinternal.com/vega-util/-/vega-util-1.7.0.tgz#0ca0512bb8dcc6541165c34663d115d0712e0cf1"
 
 vega-view-transforms@^1.1:
   version "1.1.1"
@@ -3030,6 +3342,14 @@ vega-view-transforms@^1.1:
     vega-dataflow "3"
     vega-scenegraph "2"
     vega-util "1"
+
+vega-view-transforms@^2.0.0:
+  version "2.0.0"
+  resolved "https://unpm.uberinternal.com/vega-view-transforms/-/vega-view-transforms-2.0.0.tgz#b1f790af9e510ec9eecde522d11891d48c80ae79"
+  dependencies:
+    vega-dataflow "^4.0.0"
+    vega-scenegraph "^3.0.0"
+    vega-util "^1.7.0"
 
 vega-view@^2.1:
   version "2.1.0"
@@ -3042,6 +3362,18 @@ vega-view@^2.1:
     vega-scenegraph "2"
     vega-util "1"
 
+vega-view@^3.2.0:
+  version "3.2.0"
+  resolved "https://unpm.uberinternal.com/vega-view/-/vega-view-3.2.0.tgz#b64ccc60ef21bc636dbcfd91e3be61f25991b5f2"
+  dependencies:
+    d3-array "^1.2.1"
+    d3-timer "^1.0.7"
+    vega-dataflow "^4.0.1"
+    vega-parser "^3.1.0"
+    vega-runtime "^3.0.1"
+    vega-scenegraph "^3.1.0"
+    vega-util "^1.7.0"
+
 vega-voronoi@2:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/vega-voronoi/-/vega-voronoi-2.0.0.tgz#6df399181dc070a2ef52234ebfe5d7cebd0f3802"
@@ -3049,6 +3381,14 @@ vega-voronoi@2:
     d3-voronoi "1"
     vega-dataflow "3"
     vega-util "1"
+
+vega-voronoi@^3.0.0:
+  version "3.0.0"
+  resolved "https://unpm.uberinternal.com/vega-voronoi/-/vega-voronoi-3.0.0.tgz#e83d014c0d8d083592d5246122e3a9d4af0ce434"
+  dependencies:
+    d3-voronoi "^1.1.2"
+    vega-dataflow "^4.0.0"
+    vega-util "^1.7.0"
 
 vega-wordcloud@^2.1:
   version "2.1.0"
@@ -3060,7 +3400,17 @@ vega-wordcloud@^2.1:
     vega-statistics "^1.2"
     vega-util "1"
 
-vega@^3.0.0, vega@^3.0.10:
+vega-wordcloud@^3.0.0:
+  version "3.0.0"
+  resolved "https://unpm.uberinternal.com/vega-wordcloud/-/vega-wordcloud-3.0.0.tgz#3843d5233673a36a93f78c849d3c7568c1cdc2ce"
+  dependencies:
+    vega-canvas "^1.0.1"
+    vega-dataflow "^4.0.0"
+    vega-scale "^2.1.1"
+    vega-statistics "^1.2.1"
+    vega-util "^1.7.0"
+
+vega@^3.0.0:
   version "3.0.10"
   resolved "https://registry.yarnpkg.com/vega/-/vega-3.0.10.tgz#35af3a6224e1c7d67d49ffce5c5282461370f36a"
   dependencies:
@@ -3089,6 +3439,18 @@ vega@^3.0.0, vega@^3.0.10:
     canvas "^1.6"
     canvas-prebuilt "^1.6"
 
+vega@^4.0.0-rc.2:
+  version "4.0.0-rc.2"
+  resolved "https://unpm.uberinternal.com/vega/-/vega-4.0.0-rc.2.tgz#2f892b69be4c733a14ac2c6cbce3e2c788e4fcc1"
+  dependencies:
+    vega-lib "4.0.0-rc.2"
+    vega-parser "3.1.0"
+    vega-typings "*"
+    yargs "4"
+  optionalDependencies:
+    canvas "^1.6.11"
+    canvas-prebuilt "1.6.5-prerelease.1"
+
 verror@1.10.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/verror/-/verror-1.10.0.tgz#3a105ca17053af55d6e270c1f8288682e18da400"
@@ -3096,6 +3458,10 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+viewport-dimensions@^0.2.0:
+  version "0.2.0"
+  resolved "https://unpm.uberinternal.com/viewport-dimensions/-/viewport-dimensions-0.2.0.tgz#de740747db5387fd1725f5175e91bac76afdf36c"
 
 vm-browserify@~0.0.1:
   version "0.0.4"
